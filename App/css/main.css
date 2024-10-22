@@ -1,0 +1,149 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea {
+  border-radius: 0px;
+}
+
+body {
+  max-width: 1200px;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,h2 {margin: 0;}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 180px;
+  margin-bottom: 10px;
+  background-color: rgb(65, 33, 91);
+  color: transparent;
+  font-size: 42px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .3s ease-in, color .3s ease-in, transform .3s ease-in;
+}
+
+
+
+.card.open {
+  background-color: rgb(229, 200, 165);
+  color: rgb(60, 52, 42);
+}
+
+.card.success {
+  background-color: rgb(16, 90, 31);
+  color: white;
+  transform: scale(.95);
+}
+
+label {
+  cursor: pointer;
+}
+
+#game,
+.main__title {
+  display: none;
+}
+
+#modal_01 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.pop-up__container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+	position: relative;
+	margin: 10% auto;
+	padding: 30px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.pop-up__title {
+  margin-bottom: 15px;
+}
+
+.pop-up__label {
+  margin-bottom: 15px;
+}
+
+.pop-up__btn {
+  max-width: 30%;
+  align-self: center;
+}
